@@ -1,0 +1,22 @@
+/* cdn
+font - no more 3
+
+ */
+* {
+  background-color: #f0e2c5;
+  color: #49281a;
+}
+
+h1 {
+  font-family: "Playfair Display SC", serif;
+  font-size: 3em;
+}
+p,
+a {
+  font-family: "Lato", sans-serif;
+}
+
+/* * = for whole pae
+# = for ID
+. = for class
+ */
