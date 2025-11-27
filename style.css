@@ -2,19 +2,54 @@
 font - no more 3
 
  */
+
+/* resettin rules */
 * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
   background-color: #f0e2c5;
   color: #49281a;
 }
 
-h1 {
+/* header section */
+header {
+  border: 2px solid black;
+  width: 80%;
+  margin: 0 auto;
+  padding: 150px 0;
+  text-align: center;
+}
+
+header h1 {
+  font-family: "Playfair Display 5C", serif;
+  font-size: 3em;
+}
+
+header p {
+  font-family: "Lato", sans-serif;
+  /* background-color: red;
+  padding: 20px 0; */
+  margin: 20px 0 60px;
+}
+
+header a {
+  font-family: "Lato", sans-serif;
+  background-color: #49281a;
+  color: #f0e2c5;
+  padding: 20px 50px;
+  text-decoration: none;
+  border-radius: 9px;
+}
+
+/* h1 {
   font-family: "Playfair Display SC", serif;
   font-size: 3em;
 }
 p,
 a {
   font-family: "Lato", sans-serif;
-}
+} */
 
 /* * = for whole pae
 # = for ID
