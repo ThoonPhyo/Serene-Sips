@@ -15,16 +15,18 @@ html {
 }
 
 body {
-  background-color: #f0e2c5;
+  /* #f0e2c5 */
+  background-color: #FEDBB5 ;
   color: #49281a;
 }
 
 /* header section */
 header {
-  border: 2px solid #f0e2c5;
-  width: 80%;
+  border: 0px solid #FCD6A7;
+  background: #FCD6A7;
+  width: 100%;
   margin: 0 auto;
-  padding: 150px 0;
+  padding: 120px 0 195px 0;
   text-align: center;
 }
 
@@ -47,6 +49,16 @@ header a {
   padding: 20px 50px;
   text-decoration: none;
   border-radius: 9px;
+}
+
+#header {
+  background-image: url(images/10801858\(png\).png), url(images/10801858\(2\).png);
+  background-size: contain, contain;
+  background-repeat: no-repeat, no-repeat;
+  background-position: bottom left, bottom right;
+  /* background-position: -68px 77%; */
+  /* background-position: 700% 40%;
+  background-position: 20px 40px; */
 }
 
 /* nav section */
