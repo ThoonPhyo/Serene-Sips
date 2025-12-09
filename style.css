@@ -101,17 +101,19 @@ footer {
   margin: 20px 0;
 }
 .card-container {
-  border: 1px solid #000;
+  border: 1px solid #49281a;
 }
 .card {
-  border: 2px solid #000;
+  border: 2px solid #49281a;
   width: 250px;
   /* background-color: #f0e2c5; */
   padding: 20px;
   border-radius: 9px;
 }
 .card-img-top {
+  border: 2px solid #49281a;
   max-width: 100%;
+  max-height: 50%;
   border-radius: 9px;
 }
 .card-body {
