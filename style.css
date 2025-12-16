@@ -44,6 +44,18 @@ header h1 {
   font-size: 3.2em;
   text-transform: uppercase;
   text-shadow: 4px 0px 4px gray;
+  /* animation */
+  animation: animated-bar 2s ease;
+}
+
+/* nav bar animation */
+@keyframes animated-bar {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 header p {
@@ -52,12 +64,45 @@ header p {
 }
 
 header a {
+  display: inline-block;
   font-family: "Lato", sans-serif;
   background-color: #49281a;
   color: #e6e6e4;
   padding: 20px 50px;
   text-decoration: none;
   border-radius: 9px;
+  transition: all 0.3s ease 0s;
+
+  /* animation */
+  animation: animated-btn 2s ease 0s 1;
+}
+
+/* transition when pointer over the explore menu*/
+header a:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  background-color: #e67e00; /* slightly brighter/darker */
+}
+
+/* animation for explore menu btn */
+@keyframes animated-btn {
+  0% {
+    transform: translateY(-1200px);
+    opacity: 0;
+  }
+
+  80% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  90% {
+    transform: translateY(-20px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
 }
 
 /* background images for header section */
@@ -84,10 +129,18 @@ nav {
 }
 
 nav a {
+  display: inline-block;
   color: #e6e6e4;
   text-decoration: none;
   margin-right: 60px;
   margin-left: 60px;
+  transition: all 0.3s ease;
+}
+
+/* transition when pointer over nav a*/
+nav a:hover {
+  transform: scale(1.2);
+  text-shadow: 0px 0px 4px #e6e6e4;
 }
 
 /* our-menu section */
@@ -118,6 +171,8 @@ footer {
 .menu-lists h3 {
   margin: 20px 0;
 }
+
+/* cards */
 .card-container {
   /* border: 1px solid green; */
   padding: 20px;
@@ -137,6 +192,8 @@ footer {
   border-radius: 9px;
   position: relative;
   overflow: hidden;
+  /* delay  */
+  transition: all 1.07s ease 0s;
 }
 
 /* caption */
@@ -151,11 +208,13 @@ footer {
   background: rgba(0, 0, 0, 0.7);
   color: #e6e6e4;
   text-align: center;
-  /* overflow: auto; */
+  /* delay */
+  transition: all 1.3s ease 0s;
 }
-/* mouse pointer over the card*/
+
+/*transition mouse pointer over the card*/
 .card:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 .card:hover .caption {
   top: 0;
@@ -171,11 +230,12 @@ footer {
   border-radius: 9px;
   z-index: 1;
 }
-/* mouse pointer over photo */
-.card-img-top:hover {
+
+/*transition mouse pointer over photo */
+/* .card-img-top:hover {
   transform: scale(1.15);
   z-index: 1;
-}
+} */
 
 .card-body {
   text-align: center;
@@ -198,6 +258,14 @@ footer {
   height: 40px;
   border: none;
   border-radius: 9px;
+  transition: all 0.3s linear;
+}
+/*transition when mouse pointer over btn */
+.btn-order:hover {
+  transform: scale(1.05);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  background-color: #e67e00;
 }
 
 /* about-us section */
@@ -235,6 +303,7 @@ form div {
   border-bottom: 1px dotted #49281a;
 }
 .btn-send {
+  /* display: inline-block; */
   margin-left: 170px;
   width: 150px;
   height: 40px;
@@ -242,6 +311,13 @@ form div {
   color: #fbf8f6;
   border: none;
   border-radius: 9px;
+  transition: all 0.3s ease;
+}
+/*transition when mouse pointer over btn */
+.btn-send:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  background-color: #e67e00; /* slightly brighter/darker */
 }
 
 /* footer section */
@@ -264,10 +340,20 @@ footer a {
 
 /* up arrow button */
 .bi-arrow-up-circle-fill {
+  display: inline-block;
   font-size: 3.5rem;
   position: fixed;
   right: 20px;
   bottom: 15px;
+  transition: all 0.5s ease;
+
+  /* animation */
+  animation: animated-btn 2s ease 0s 1;
+}
+/*transition when mouse pointer over btn */
+.bi-arrow-up-circle-fill:hover {
+  transform: translateY(-5px);
+  color: #e67e00; /* slightly brighter/darker */
 }
 
 /* h1 {
