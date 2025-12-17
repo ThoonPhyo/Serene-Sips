@@ -180,6 +180,7 @@ footer {
   gap: 2px;
   flex-direction: row;
   justify-content: space-evenly;
+  align-items: center;
   /* width: 1012px;
   left: 9%;
   position: absolute; */
@@ -193,14 +194,14 @@ footer {
   position: relative;
   overflow: hidden;
   /* delay  */
-  transition: all 1.07s ease 0s;
+  /* transition: all 1.07s ease 0s; */
 }
 
 /* caption */
 .caption {
   position: absolute;
   left: 0;
-  top: -100%;
+  top: -15%;
   width: 250px;
   padding: 10px;
   border-radius: 0 9px 9px;
@@ -213,9 +214,9 @@ footer {
 }
 
 /*transition mouse pointer over the card*/
-.card:hover {
+/* .card:hover {
   transform: scale(1.05);
-}
+} */
 .card:hover .caption {
   top: 0;
   z-index: 2;
@@ -228,14 +229,16 @@ footer {
   max-width: 100%;
   max-height: 80%;
   border-radius: 9px;
-  z-index: 1;
+  /* z-index: 1; */
+  /* delay */
+  transition: all 1.3s ease 0s;
 }
 
 /*transition mouse pointer over photo */
-/* .card-img-top:hover {
-  transform: scale(1.15);
-  z-index: 1;
-} */
+.card-img-top:hover {
+  transform: scale(1.18);
+  /* z-index: 1; */
+}
 
 .card-body {
   text-align: center;
@@ -345,15 +348,36 @@ footer a {
   position: fixed;
   right: 20px;
   bottom: 15px;
-  transition: all 0.5s ease;
+  transition: all 0.7s ease;
 
   /* animation */
-  animation: animated-btn 2s ease 0s 1;
+  animation: animated-upa-btn 2s ease 0s 1;
 }
 /*transition when mouse pointer over btn */
 .bi-arrow-up-circle-fill:hover {
-  transform: translateY(-5px);
+  transform: scale(1.02) translateY(-5px);
   color: #e67e00; /* slightly brighter/darker */
+}
+
+/* animation for up arrow button */
+@keyframes animated-upa-btn {
+  0% {
+    transform: translateY(-1200px);
+    opacity: 0;
+  }
+
+  80% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  90% {
+    transform: translateY(-20px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
 }
 
 /* h1 {
